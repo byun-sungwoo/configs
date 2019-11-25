@@ -27,3 +27,6 @@ inoremap <Up> <C-o>:echo "that's an arrow key"<CR>
 nnoremap <Down> :echo "that's an arrow key"<CR>
 vnoremap <Down> :<C-u>echo "that's an arrow key"<CR>
 inoremap <Down> <C-o>:echo "that's an arrow key"<CR>
+
+" Show document name
+set laststatus=2
