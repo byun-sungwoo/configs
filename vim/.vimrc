@@ -1,32 +1,28 @@
-" Mute bell sound
-set visualbell
-
-" Mute visual flash
-set t_vb=
-
-" Show current line
-" set cursorline
-
-" Show line numbers
-set number
-
-" Show tabs
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
-set list
+" Settings
+set listchars=eol:$,tab:\|-,trail:~,extends:>,precedes:<
+set list		" Show tabs
+set visualbell		" Mute bell sound
+set t_vb=		" Mute visual flash
+set number		" Show line numbers
+set laststatus=2	" Show document name
+set nobackup		" No backup
+set nowritebackup	" No writing backup
+set noswapfile		" No swap files
+set nowrap		" No wrapping
+set ai			" Enable auto indent
+set si			" Enable smart indent
+"set mouse=a		" Enable mouse
 
 " Disable Arrow Keys
-nnoremap <Left> :echo "that's an arrow key"<CR>
-vnoremap <Left> :<C-u>echo "that's an arrow key"<CR>
-inoremap <Left> <C-o>:echo "that's an arrow key"<CR>
-nnoremap <Right> :echo "that's an arrow key"<CR>
-vnoremap <Right> :<C-u>echo "that's an arrow key"<CR>
-inoremap <Right> <C-o>:echo "that's an arrow key"<CR>
-nnoremap <Up> :echo "that's an arrow key"<CR>
-vnoremap <Up> :<C-u>echo "that's an arrow key"<CR>
-inoremap <Up> <C-o>:echo "that's an arrow key"<CR>
-nnoremap <Down> :echo "that's an arrow key"<CR>
-vnoremap <Down> :<C-u>echo "that's an arrow key"<CR>
-inoremap <Down> <C-o>:echo "that's an arrow key"<CR>
-
-" Show document name
-set laststatus=2
+nnoremap <Left> :echo		"bruh... [left arrow]"	<CR>
+vnoremap <Left> :<C-u>echo	"bruh... [left arrow]"	<CR>
+inoremap <Left> <C-o>:echo	"bruh... [left arrow]"	<CR>
+nnoremap <Right> :echo		"bruh... [right arrow]"	<CR>
+vnoremap <Right> :<C-u>echo	"bruh... [right arrow]"	<CR>
+inoremap <Right> <C-o>:echo	"bruh... [right arrow]"	<CR>
+nnoremap <Up> :echo		"bruh... [up arrow]"	<CR>
+vnoremap <Up> :<C-u>echo	"bruh... [up arrow]"	<CR>
+inoremap <Up> <C-o>:echo	"bruh... [up arrow]"	<CR>
+nnoremap <Down> :echo		"bruh... [down arrow]"	<CR>
+vnoremap <Down> :<C-u>echo	"bruh... [down arrow]"	<CR>
+inoremap <Down> <C-o>:echo	"bruh... [down arrow]"	<CR>
