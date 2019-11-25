@@ -26,3 +26,6 @@ inoremap <Up> <C-o>:echo	"bruh... [up arrow]"	<CR>
 nnoremap <Down> :echo		"bruh... [down arrow]"	<CR>
 vnoremap <Down> :<C-u>echo	"bruh... [down arrow]"	<CR>
 inoremap <Down> <C-o>:echo	"bruh... [down arrow]"	<CR>
+
+nnoremap <C-j> <C-e>
+nnoremap <C-k> <C-y>
