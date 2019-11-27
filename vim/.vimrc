@@ -11,6 +11,7 @@ set noswapfile		" No swap files
 set nowrap		" No wrapping
 set ai			" Enable auto indent
 set si			" Enable smart indent
+set hlsearch		" Enable highlighting
 "set mouse=a		" Enable mouse
 
 " Disable Arrow Keys
@@ -27,5 +28,31 @@ nnoremap <Down> :echo		"bruh... [down arrow]"	<CR>
 vnoremap <Down> :<C-u>echo	"bruh... [down arrow]"	<CR>
 inoremap <Down> <C-o>:echo	"bruh... [down arrow]"	<CR>
 
+" Scrolling
+nnoremap <C-h> zh
 nnoremap <C-j> <C-e>
 nnoremap <C-k> <C-y>
+nnoremap <C-l> zl
+
+" Clear highlighting with forwardslash
+nnoremap <C-_> :noh<CR>
+
+"" Moving single line
+"nnoremap <Down> :call LineDown()<CR> 
+"nnoremap <Up> :call LineUp()<CR>
+"
+"function LineUp()
+"	if line('.')>1
+"		normal ddkP
+"	else
+"		echo "cannot move line above 1"
+"	endif
+"endfunction
+"
+"function LineDown()
+"	if line('.')<line('$')
+"		normal ddjP
+"	else
+"		echo "cannot move line below "+line('$')
+"	endif
+"endfunction
