@@ -1,5 +1,6 @@
 " Settings
-set listchars=eol:$,tab:\|-,trail:~,extends:>,precedes:<
+"set listchars=eol:$,tab:\|-,trail:~,extends:>,precedes:<
+set listchars=eol:$,tab:\|-,extends:>,precedes:<
 set list		" Show tabs
 set visualbell		" Mute bell sound
 set t_vb=		" Mute visual flash
