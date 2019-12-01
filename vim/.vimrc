@@ -5,6 +5,7 @@ set list		" Show tabs
 set visualbell		" Mute bell sound
 set t_vb=		" Mute visual flash
 set number		" Show line numbers
+set relativenumber	" Show relative line numbers
 set laststatus=2	" Show document name
 set nobackup		" No backup
 set nowritebackup	" No writing backup
