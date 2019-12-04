@@ -39,6 +39,9 @@ nnoremap <C-l> zl
 " Clear highlighting with forwardslash
 nnoremap <C-_> :noh<CR>
 
+" Set colorscheme as default
+colorscheme default
+
 "" Moving single line
 "nnoremap <Down> :call LineDown()<CR> 
 "nnoremap <Up> :call LineUp()<CR>
