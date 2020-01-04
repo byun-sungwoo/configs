@@ -1,3 +1,7 @@
+PATH1=~/Documents/2019-fall/c212_ta/attendance
+PATH2=~/Documents/byun-sungwoo/configs
+PATH3=~/Documents/byun-sungwoo/bytris/sourcefiles
+
 # update functions in bashrc
 function update-bashrc() {
 	source ~/.bashrc
@@ -12,8 +16,6 @@ function dsbyun@burrow() {
 function dsbyun@silo() {
 	ssh dsbyun@silo.soic.indiana.edu
 }
-
-PATH1=~/Documents/2019-fall/c212_ta/attendance
 
 # [C212 Attendance Program]
 # Compile and run attendance program. Move files.
@@ -47,4 +49,25 @@ function lab212-open() {
 # Call the long ass gogh command
 function gogh-color() {
 	bash -c "$(wget -qO- https://git.io/vQgMr)"
+}
+
+# Update vim and tmux to configs
+function update-config() {
+	cp -v ~/.my_commands.sh $PATH2/linux
+	cp -v ~/.bashrc $PATH2/linux
+	cp -v ~/.tmux.conf $PATH2/tmux
+	cp -v ~/.vimrc $PATH2/vim
+}
+
+# Star Wars
+function starwars() {
+	telnet towel.blinkenlights.nl
+}
+
+# Bytris
+function bytris() {
+	og_pwd=$(pwd)
+	cd $PATH3
+	./compilerun
+	cd $og_pwd
 }

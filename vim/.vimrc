@@ -14,7 +14,7 @@ set nowrap		" No wrapping
 set ai			" Enable auto indent
 set si			" Enable smart indent
 set hlsearch		" Enable highlighting
-set mouse=a		" Enable mouse
+"set mouse=a		" Enable mouse
 set cursorline		" Underline current line
 
 " Disable Arrow Keys
