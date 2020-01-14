@@ -14,22 +14,23 @@ set nowrap		" No wrapping
 set ai			" Enable auto indent
 set si			" Enable smart indent
 set hlsearch		" Enable highlighting
-"set mouse=a		" Enable mouse
 set cursorline		" Underline current line
+set showcmd		" Show commands being typed
+"set mouse=a		" Enable mouse
 
 " Disable Arrow Keys
-nnoremap <Left> :echo		"bruh... [left arrow]"	<CR>
-vnoremap <Left> :<C-u>echo	"bruh... [left arrow]"	<CR>
-inoremap <Left> <C-o>:echo	"bruh... [left arrow]"	<CR>
-nnoremap <Right> :echo		"bruh... [right arrow]"	<CR>
-vnoremap <Right> :<C-u>echo	"bruh... [right arrow]"	<CR>
-inoremap <Right> <C-o>:echo	"bruh... [right arrow]"	<CR>
-nnoremap <Up> :echo		"bruh... [up arrow]"	<CR>
-vnoremap <Up> :<C-u>echo	"bruh... [up arrow]"	<CR>
-inoremap <Up> <C-o>:echo	"bruh... [up arrow]"	<CR>
-nnoremap <Down> :echo		"bruh... [down arrow]"	<CR>
-vnoremap <Down> :<C-u>echo	"bruh... [down arrow]"	<CR>
-inoremap <Down> <C-o>:echo	"bruh... [down arrow]"	<CR>
+nnoremap <Left> :echo		"this is vim my man [left arrow]"	<CR>
+vnoremap <Left> :<C-u>echo	"this is vim my man [left arrow]"	<CR>
+inoremap <Left> <C-o>:echo	"this is vim my man [left arrow]"	<CR>
+nnoremap <Right> :echo		"this is vim my man [right arrow]"	<CR>
+vnoremap <Right> :<C-u>echo	"this is vim my man [right arrow]"	<CR>
+inoremap <Right> <C-o>:echo	"this is vim my man [right arrow]"	<CR>
+nnoremap <Up> :echo		"this is vim my man [up arrow]"		<CR>
+vnoremap <Up> :<C-u>echo	"this is vim my man [up arrow]"		<CR>
+inoremap <Up> <C-o>:echo	"this is vim my man [up arrow]"		<CR>
+nnoremap <Down> :echo		"this is vim my man [down arrow]"	<CR>
+vnoremap <Down> :<C-u>echo	"this is vim my man [down arrow]"	<CR>
+inoremap <Down> <C-o>:echo	"this is vim my man [down arrow]"	<CR>
 
 " Scrolling
 nnoremap <C-h> zh
@@ -42,6 +43,10 @@ nnoremap <C-_> :noh<CR>
 
 " Set colorscheme as default
 colorscheme default
+
+" Set split to open on the right and bottom
+set splitright
+set splitbelow
 
 "" Moving single line
 "nnoremap <Down> :call LineDown()<CR> 

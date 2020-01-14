@@ -1,6 +1,6 @@
 PATH1=~/Documents/2019-fall/c212_ta/attendance
 PATH2=~/Documents/byun-sungwoo/configs
-PATH3=~/Documents/byun-sungwoo/bytris/sourcefiles
+PATH3=~/Documents/byun-sungwoo/bytris
 
 # update functions in bashrc
 function update-bashrc() {
