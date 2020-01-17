@@ -1,5 +1,14 @@
-" Settings
-"set listchars=eol:$,tab:\|-,trail:~,extends:>,precedes:<
+"              __
+"             /  |
+"   __     __ $$/  _____  ____    ______    _______
+"  /  \   /  |/  |/     \/    \  /      \  /       |
+"  $$  \ /$$/ $$ |$$$$$$ $$$$  |/$$$$$$  |/$$$$$$$/
+"   $$  /$$/  $$ |$$ | $$ | $$ |$$ |  $$/ $$ |
+"  __$$ $$/   $$ |$$ | $$ | $$ |$$ |      $$ \_____
+" /  |$$$/    $$ |$$ | $$ | $$ |$$ |      $$       |
+" $$/  $/     $$/ $$/  $$/  $$/ $$/        $$$$$$$/
+
+" General
 set listchars=eol:$,tab:\|-,extends:>,precedes:<
 set list		" Show tabs
 set visualbell		" Mute bell sound
@@ -38,11 +47,19 @@ nnoremap <C-j> <C-e>
 nnoremap <C-k> <C-y>
 nnoremap <C-l> zl
 
+" Copy Paste
+vnoremap <C-c> "+y
+nnoremap <C-p> "+p
+vnoremap <C-p> "+p
+
 " Clear highlighting with forwardslash
 nnoremap <C-_> :noh<CR>
 
 " Set colorscheme as default
 colorscheme default
+
+" Repeat
+nnoremap ; .
 
 " Set split to open on the right and bottom
 set splitright
