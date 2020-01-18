@@ -27,6 +27,7 @@ function h212repoupdate() {
 	for REPO in $(ls)
 	do
 		cd $REPO
+		echo [reset/clean/pull $REPO]
 		git reset --hard HEAD
 		git clean -f
 		git pull origin master
