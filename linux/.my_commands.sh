@@ -17,7 +17,7 @@ function dsbyun@silo() {
 	ssh dsbyun@silo.soic.indiana.edu
 }
 
-# Call the long ass gogh command
+# Gogh
 function gogh-color() {
 	bash -c "$(wget -qO- https://git.io/vQgMr)"
 }
@@ -25,7 +25,7 @@ function gogh-color() {
 # Update vim and tmux to configs
 function update-config() {
 	cp -v ~/.my_commands.sh $BYUNCONFIG/linux
-	cp -v ~/.h212.sh $BYUNCONFIG/vim
+	cp -v ~/.h212.sh $BYUNCONFIG/linux
 	cp -v ~/.bashrc $BYUNCONFIG/linux
 	cp -v ~/.tmux.conf $BYUNCONFIG/tmux
 	cp -v ~/.vimrc $BYUNCONFIG/vim
