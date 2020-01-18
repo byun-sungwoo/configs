@@ -122,3 +122,4 @@ bind 'set bell-style none'
 
 # my custom commands
 source ~/.my_commands.sh
+source ~/.h212.sh
