@@ -32,13 +32,13 @@ function gogh-color() {
 
 # Update vim and tmux to configs
 function update-config() {
+	og_pwd=$(pwd)
 	cd $BYUNCONFIG
 	cp -v ~/.my_commands.sh linux
 	cp -v ~/.h212.sh linux
 	cp -v ~/.bashrc linux
 	cp -v ~/.tmux.conf tmux
 	cp -v ~/.vimrc vim
-	og_pwd=$(pwd)
 	git add -A
 	git commit -m "update-config"
 	git push origin master
