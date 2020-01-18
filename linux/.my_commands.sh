@@ -1,3 +1,17 @@
+#                                                                                                           __
+#                                                                                                          /  |
+#  _____  ____   __    __          _______   ______   _____  ____   _____  ____    ______   _______    ____$$ |  _______
+# /     \/    \ /  |  /  |        /       | /      \ /     \/    \ /     \/    \  /      \ /       \  /    $$ | /       |
+# $$$$$$ $$$$  |$$ |  $$ |       /$$$$$$$/ /$$$$$$  |$$$$$$ $$$$  |$$$$$$ $$$$  | $$$$$$  |$$$$$$$  |/$$$$$$$ |/$$$$$$$/
+# $$ | $$ | $$ |$$ |  $$ |       $$ |      $$ |  $$ |$$ | $$ | $$ |$$ | $$ | $$ | /    $$ |$$ |  $$ |$$ |  $$ |$$      \
+# $$ | $$ | $$ |$$ \__$$ |       $$ \_____ $$ \__$$ |$$ | $$ | $$ |$$ | $$ | $$ |/$$$$$$$ |$$ |  $$ |$$ \__$$ | $$$$$$  |
+# $$ | $$ | $$ |$$    $$ | ______$$       |$$    $$/ $$ | $$ | $$ |$$ | $$ | $$ |$$    $$ |$$ |  $$ |$$    $$ |/     $$/
+# $$/  $$/  $$/  $$$$$$$ |/      |$$$$$$$/  $$$$$$/  $$/  $$/  $$/ $$/  $$/  $$/  $$$$$$$/ $$/   $$/  $$$$$$$/ $$$$$$$/
+#               /  \__$$ |$$$$$$/
+#               $$    $$/
+#                $$$$$$/
+
+# Directories
 C212ATTENDANCE=~/Documents/2019-fall/c212_ta/attendance
 BYUNCONFIG=~/Documents/byun-sungwoo/configs
 BYUNBYTRIS=~/Documents/byun-sungwoo/bytris
@@ -24,11 +38,17 @@ function gogh-color() {
 
 # Update vim and tmux to configs
 function update-config() {
-	cp -v ~/.my_commands.sh $BYUNCONFIG/linux
-	cp -v ~/.h212.sh $BYUNCONFIG/linux
-	cp -v ~/.bashrc $BYUNCONFIG/linux
-	cp -v ~/.tmux.conf $BYUNCONFIG/tmux
-	cp -v ~/.vimrc $BYUNCONFIG/vim
+	cd $BYUNCONFIG
+	cp -v ~/.my_commands.sh linux
+	cp -v ~/.h212.sh linux
+	cp -v ~/.bashrc linux
+	cp -v ~/.tmux.conf tmux
+	cp -v ~/.vimrc vim
+	og_pwd=$(pwd)
+	git add -A
+	git commit -m "update-config"
+	git push origin master
+	cd $og_pwd
 }
 
 # Star Wars
