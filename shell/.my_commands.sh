@@ -6,9 +6,8 @@
 # ╚═╝╚═╝     ╚═╝   ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝╚══════╝╚═╝  ╚═╝
 
 # Directories
-C212ATTENDANCE=~/Documents/2019-fall/c212_ta/attendance
-BYUNCONFIG=~/Documents/byun-sungwoo/configs
-BYUNBYTRIS=~/Documents/byun-sungwoo/bytris
+BYUN_CFG=~/Documents/byun-sungwoo/configs
+BYUN_BYT=~/Documents/byun-sungwoo/bytris
 ECLIPSE_PATH=~/eclipse/java-2019-12/eclipse
 
 # update functions in bashrc
@@ -35,8 +34,9 @@ function gogh-color() {
 function update-config() {
 	og_pwd=$(pwd)
 	echo [copying home changes to config repository]
-	cd $BYUNCONFIG
-	cp -v ~/.my_commands.sh ~/.h212.sh ~/.bashrc linux
+	cd $BYUN_CFG
+	cp -v ~/.bashrc bash
+	cp -v ~/.my_commands.sh ~/.h212.sh shell
 	cp -v ~/.tmux.conf tmux
 	cp -v ~/.vimrc vim
 	echo [push changes to github]
@@ -54,7 +54,7 @@ function starwars() {
 # Bytris
 function bytris() {
 	og_pwd=$(pwd)
-	cd $BYUNBYTRIS
+	cd $BYUN_BYT
 	./compilerun
 	cd $og_pwd
 }

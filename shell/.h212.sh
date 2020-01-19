@@ -6,13 +6,14 @@
 # ╚═╝╚═╝  ╚═╝╚══════╝ ╚═╝╚══════╝╚═╝╚══════╝╚═╝  ╚═╝
 
 # Directories
-H212REPOSITORY=~/Documents/2020spring/h212_ta/repositories
-H212ATTENDANCE=~/Documents/2020spring/h212_ta/attendance
+H212_DIR=~/Documents/2020spring/h212_ta
+H212_REP=$H212_DIR/repositories
+H212_ATD=$H212_DIR/attendance
 
 # Run attendance program
-function h212attendance() {
+function h212-attendance() {
 	og_pwd=$(pwd)
-	cd $H212ATTENDANCE
+	cd $H212_ATD
 	javac Attendance.java
 	clear
 	java Attendance
@@ -21,13 +22,13 @@ function h212attendance() {
 }
 
 # Update student repositories and remove any local changes
-function h212repoupdate() {
+function h212-update-repo() {
 	og_pwd=$(pwd)
-	cd $H212REPOSITORY
+	cd $H212_REP
 	for REPO in $(ls)
 	do
 		cd $REPO
-		echo [reset/clean/pull $REPO]
+		echo ----reset/clean/pull $REPO----
 		git reset --hard HEAD
 		git clean -f
 		git pull origin master
