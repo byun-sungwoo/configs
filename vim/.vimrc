@@ -5,6 +5,25 @@
 " ██╗╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
 " ╚═╝ ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'reclease'}
+call plug#end()
+
+" Coc Snippet Tab Completion
+inoremap <silent><expr> <TAB>
+	\ pumvisible() ? coc#_select_confirm() :
+	\ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+	\ <SID>check_back_space() ? "\<TAB>" :
+	\ coc#refresh()
+
+" :CocInstall coc-java
+" :CocInstall coc-python
+" :CocInstall coc-tsserver
+" :CocInstall coc-pairs
+" :CocInstall coc-snippets
+" :CocList extensions
+
 " General
 set listchars=eol:$,tab:\|-,extends:>,precedes:<
 set list		" Show tabs
@@ -61,23 +80,3 @@ nnoremap ; .
 " Set split to open on the right and bottom
 set splitright
 set splitbelow
-
-"" Moving single line
-"nnoremap <Down> :call LineDown()<CR> 
-"nnoremap <Up> :call LineUp()<CR>
-"
-"function LineUp()
-"	if line('.')>1
-"		normal ddkP
-"	else
-"		echo "cannot move line above 1"
-"	endif
-"endfunction
-"
-"function LineDown()
-"	if line('.')<line('$')
-"		normal ddjP
-"	else
-"		echo "cannot move line below "+line('$')
-"	endif
-"endfunction
