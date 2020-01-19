@@ -35,10 +35,9 @@ function update-config() {
 	og_pwd=$(pwd)
 	echo [copying home changes to config repository]
 	cd $BYUN_CFG
-	cp -v ~/.bashrc bash
-	cp -v ~/.my_commands.sh ~/.h212.sh shell
+	cp -v ~/.my_commands.sh ~/.h212.sh ~/.bashrc shell
 	cp -v ~/.tmux.conf tmux
-	cp -v ~/.vimrc vim
+	cp -v ~/.vimrc ~/.gvimrc vim
 	echo [push changes to github]
 	git add -A
 	git commit -m "update-config"
