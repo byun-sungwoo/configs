@@ -9,6 +9,7 @@
 C212ATTENDANCE=~/Documents/2019-fall/c212_ta/attendance
 BYUNCONFIG=~/Documents/byun-sungwoo/configs
 BYUNBYTRIS=~/Documents/byun-sungwoo/bytris
+ECLIPSE_PATH=~/eclipse/java-2019-12/eclipse
 
 # update functions in bashrc
 function update-bashrc() {
@@ -55,5 +56,13 @@ function bytris() {
 	og_pwd=$(pwd)
 	cd $BYUNBYTRIS
 	./compilerun
+	cd $og_pwd
+}
+
+# Launch Eclipse
+function eclipse_launch() {
+	og_pwd=$(pwd)
+	cd $ECLIPSE_PATH
+	./eclipse
 	cd $og_pwd
 }
