@@ -7,7 +7,7 @@
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'reclease'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Coc Snippet Tab Completion
@@ -17,6 +17,7 @@ inoremap <silent><expr> <TAB>
 	\ <SID>check_back_space() ? "\<TAB>" :
 	\ coc#refresh()
 
+" Make sure to have yarn installed
 " :CocInstall coc-java
 " :CocInstall coc-python
 " :CocInstall coc-tsserver
