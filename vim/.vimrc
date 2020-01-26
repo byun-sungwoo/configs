@@ -21,7 +21,6 @@ inoremap <silent><expr> <TAB>
 " :CocInstall coc-java
 " :CocInstall coc-python
 " :CocInstall coc-tsserver
-" :CocInstall coc-pairs
 " :CocInstall coc-snippets
 " :CocList extensions
 

@@ -54,7 +54,7 @@ function starwars() {
 function bytris() {
 	og_pwd=$(pwd)
 	cd $BYUN_BYT
-	./compilerun
+	./compilerun.sh
 	cd $og_pwd
 }
 
