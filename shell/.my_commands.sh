@@ -38,6 +38,7 @@ function update-config() {
 	cp -v ~/.my_commands.sh ~/.h212.sh ~/.bashrc shell
 	cp -v ~/.tmux.conf tmux
 	cp -v ~/.vimrc ~/.gvimrc vim
+	cp -v ~/.vim/coc-settings.json vim
 	echo [push changes to github]
 	git add -A
 	git commit -m "update-config"
