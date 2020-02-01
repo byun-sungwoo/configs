@@ -41,6 +41,11 @@ inoremap <silent><expr> <TAB>
 	\ <SID>check_back_space() ? "\<TAB>" :
 	\ coc#refresh()
 
+function! s:check_back_space() abort
+	let col = col('.') -1
+	return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
 " Make sure to have yarn installed
 " :CocInstall coc-java
 " :CocInstall coc-python
@@ -63,8 +68,8 @@ set nowrap		" No wrapping
 set ai			" Enable auto indent
 set si			" Enable smart indent
 set hlsearch		" Enable highlighting
-set cursorline		" Underline current line
 set showcmd		" Show commands being typed
+"set cursorline		" Underline current line
 "set mouse=a		" Enable mouse
 
 " Disable Arrow Keys
