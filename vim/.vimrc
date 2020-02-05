@@ -15,9 +15,11 @@ call plug#end()
 " Airline
 let g:airline_theme='fruit_punch'
 let g:airline_powerline_fonts=1
+
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
+
 " unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
@@ -72,20 +74,6 @@ set showcmd		" Show commands being typed
 "set cursorline		" Underline current line
 "set mouse=a		" Enable mouse
 
-" Disable Arrow Keys
-nnoremap <Left> :echo		"this is vim my man [left arrow]"	<CR>
-vnoremap <Left> :<C-u>echo	"this is vim my man [left arrow]"	<CR>
-inoremap <Left> <C-o>:echo	"this is vim my man [left arrow]"	<CR>
-nnoremap <Right> :echo		"this is vim my man [right arrow]"	<CR>
-vnoremap <Right> :<C-u>echo	"this is vim my man [right arrow]"	<CR>
-inoremap <Right> <C-o>:echo	"this is vim my man [right arrow]"	<CR>
-nnoremap <Up> :echo		"this is vim my man [up arrow]"		<CR>
-vnoremap <Up> :<C-u>echo	"this is vim my man [up arrow]"		<CR>
-inoremap <Up> <C-o>:echo	"this is vim my man [up arrow]"		<CR>
-nnoremap <Down> :echo		"this is vim my man [down arrow]"	<CR>
-vnoremap <Down> :<C-u>echo	"this is vim my man [down arrow]"	<CR>
-inoremap <Down> <C-o>:echo	"this is vim my man [down arrow]"	<CR>
-
 " Scrolling
 nnoremap <C-h> zh
 nnoremap <C-j> <C-e>
@@ -103,8 +91,8 @@ nnoremap <C-_> :noh<CR>
 " Set colorscheme as default
 colorscheme default
 
-" Repeat
-nnoremap ; .
+" Remap semicolon to colon
+nnoremap ; :
 
 " Set split to open on the right and bottom
 set splitright
