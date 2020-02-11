@@ -76,6 +76,8 @@ set showcmd		" Show commands being typed
 
 " Scrolling
 nnoremap <C-h> zh
+"nnoremap <C-j> <C-e>
+"nnoremap <C-k> <C-y>
 nnoremap <C-j> <C-e>
 nnoremap <C-k> <C-y>
 nnoremap <C-l> zl
@@ -84,6 +86,9 @@ nnoremap <C-l> zl
 vnoremap <C-c> "+y
 nnoremap <C-p> "+p
 vnoremap <C-p> "+p
+
+" Select All
+nnoremap <C-a> ggVG
 
 " Clear highlighting with forwardslash
 nnoremap <C-_> :noh<CR>

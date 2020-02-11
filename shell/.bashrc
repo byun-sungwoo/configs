@@ -120,6 +120,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# tmux remap
+alias tm='tmux'
+alias tma='tmux attach-session -t'
+alias tmk='tmux kill-session -t'
+alias tms='tmux new-session -s'
+alias tml='tmux list-session'
+
 # Mute terminal bell
 bind 'set bell-style none'
 
