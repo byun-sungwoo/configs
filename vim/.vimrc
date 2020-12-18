@@ -56,7 +56,8 @@ endfunction
 " :CocList extensions
 
 " General
-set listchars=eol:$,tab:\|-,extends:>,precedes:<
+set showbreak=\\ 
+set listchars=eol:¬,tab:▸\ ,extends:>,precedes:<,trail:·,nbsp:¤
 set list		" Show tabs
 set visualbell		" Mute bell sound
 set t_vb=		" Mute visual flash
@@ -94,7 +95,7 @@ nnoremap <C-a> ggVG
 nnoremap <C-_> :noh<CR>
 
 " Set colorscheme as default
-colorscheme default
+colorscheme ron
 
 " Remap semicolon to colon
 nnoremap ; :
