@@ -1,0 +1,62 @@
+"   ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
+"   ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
+"   ██║   ██║██║██╔████╔██║██████╔╝██║
+"   ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║
+" ██╗╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
+" ╚═╝ ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+
+" General
+set showbreak=\\ 
+"\ \ ┊
+set listchars=eol:¬,tab:▸\ ,extends:>,precedes:<,trail:·,nbsp:¤
+set list		" Show tabs
+set visualbell		" Mute bell sound
+set t_vb=		" Mute visual flash
+set number		" Show line numbers
+set relativenumber	" Show relative line numbers
+set laststatus=2	" Show document name
+set nobackup		" No backup
+set nowritebackup	" No writing backup
+set noswapfile		" No swap files
+set nowrap		" No wrapping
+set ai			" Enable auto indent
+set si			" Enable smart indent
+set hlsearch		" Enable highlighting
+set showcmd		" Show commands being typed
+"set cursorline		" Underline current line
+"set mouse=a		" Enable mouse
+
+" Scrolling
+nnoremap <C-h> zh
+"nnoremap <C-j> <C-e>
+"nnoremap <C-k> <C-y>
+nnoremap <C-j> <C-e>
+nnoremap <C-k> <C-y>
+nnoremap <C-l> zl
+
+" Copy Paste
+vnoremap <C-c> "+y
+nnoremap <C-p> "+p
+vnoremap <C-p> "+p
+
+" Select All
+nnoremap <C-a> ggVG
+
+" Clear highlighting with forwardslash
+nnoremap <C-_> :noh<CR>
+
+" Set colorscheme as default
+colorscheme ron
+
+" Remap semicolon to colon
+nnoremap ; :
+
+" Remap to move start and end of line
+nnoremap = $
+vnoremap = $
+nnoremap - _
+vnoremap - _
+
+" Set split to open on the right and bottom
+set splitright
+set splitbelow
