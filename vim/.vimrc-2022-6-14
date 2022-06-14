@@ -57,6 +57,28 @@ vnoremap = $
 nnoremap - _
 vnoremap - _
 
+" Remap braces
+nnoremap ( f(
+vnoremap ( f(
+nnoremap ) f)
+vnoremap ) f)
+nnoremap { f{
+vnoremap { f{
+nnoremap } f}
+vnoremap } f}
+nnoremap [ f[
+vnoremap [ f[
+nnoremap ] f]
+vnoremap ] f]
+"nnoremap < f<
+"vnoremap < f<
+"nnoremap > f>
+"vnoremap > f>
+nnoremap _ {
+vnoremap _ {
+nnoremap + }
+vnoremap + }
+
 " Set split to open on the right and bottom
 set splitright
 set splitbelow
